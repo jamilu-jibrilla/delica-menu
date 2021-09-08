@@ -2,7 +2,7 @@
 
 * {
   font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
 }
 nav {
   display: flex;
@@ -74,16 +74,16 @@ li:hover {
   flex-direction: column;
 }
 .items-wrapper h3 {
-  text-transform: lowercase;
   height: 20px;
-  font-weight: 700;
   background-color: rgb(58, 100, 100);
-  color: white;
+  color: rgba(255, 255, 255, 0.856);
   margin: 54px 30px -30px 30px;
-  padding-left: 13px;
+  padding-left: 14px;
   box-shadow: 1px 1px 4px 1px rgb(173, 164, 164);
   display: flex;
   align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.301);
+  /* justify-content: center; */
 }
 
 .menu-item {
@@ -128,7 +128,7 @@ li:hover {
   width: 100px;
 }
 .cart:hover {
-  border: 2px solid rgb(42, 80, 80);
+  color: solid rgb(42, 80, 80);
   font-weight: bold;
 }
 /* .cart:hover .tooltip {
@@ -136,7 +136,8 @@ li:hover {
 } */
 .price,
 .desc h4 {
-  color: rgb(42, 80, 80);
+  color: rgb(41, 53, 53);
+  font-size: 0.95em;
 }
 .one h4 {
   font-weight: normal;
@@ -147,7 +148,7 @@ li:hover {
 }
 .desc span,
 .desc p {
-  opacity: 0.6;
+  opacity: 0.58;
   font-size: 0.8em;
   margin-right: 7px;
 }
@@ -174,10 +175,11 @@ button:hover {
 
 @media screen and (max-width: 750px) {
   .items-wrapper {
-    min-width: 75%;
+    min-width: 80%;
+    letter-spacing: 0.94px;
   }
   header {
-    font-size: 0.89em;
+    font-size: 0.8em;
     min-height: 20vh;
   }
   nav {
@@ -185,9 +187,15 @@ button:hover {
     overflow-x: scroll;
     height: 24px !important;
     overflow-y: hidden;
-    height: 6vh;
+    height: 10vh;
     margin: 0 auto;
     top: 20vh;
+  }
+  .sub-header {
+    font-style: normal;
+    letter-spacing: 0px;
+    padding: 7px;
+    font: 1em sans-serif;
   }
   li {
     font-size: 0.9em;
@@ -222,12 +230,11 @@ button:hover {
     background-color: rgb(42, 80, 80);
     margin: 40px 0px -30px 0px;
     text-align: center;
-    height: 30px;
+    height: 24px;
     font-weight: 400;
     letter-spacing: 1.8px;
     color: white;
-    text-align: center;
-    box-shadow: 1px 1px 4px 2px rgb(173, 164, 164);
+    box-shadow: 1px 1px 4px 2px rgb(252, 252, 252);
     justify-content: center;
   }
 }
