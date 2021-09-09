@@ -9,19 +9,21 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  position: sticky;
+  position: fixed;
   background-color: white;
-  top: 23vh;
+  top: 20vh;
   z-index: 100;
-  height: 50px;
+  height: 40px;
+  width: 100%;
   box-shadow: 2px 2px 5px rgba(145, 140, 100, 0.3);
 }
 ul {
   display: flex;
 }
 header {
-  min-height: 23vh;
-  position: sticky;
+  width: 100%;
+  min-height: 20vh;
+  position: fixed;
   top: 0px;
   background-color: rgb(42, 80, 80);
   font-weight: 700;
@@ -40,6 +42,7 @@ header {
   padding: 6px;
 }
 body {
+  position: relative;
   margin: 0px;
   padding: 0px;
 }
@@ -53,24 +56,26 @@ p {
   margin: 0px;
   padding: 3px;
 }
-
-li {
-  color: darkslategrey;
-  list-style-type: none;
+a {
+  color: inherit;
+  text-decoration: none;
   padding: 10px 20px;
   letter-spacing: 1px;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 0.9em;
+  font-weight: 400;
   border-right: 1px solid white;
 }
-li:hover {
+li {
+  color: darkslategrey;
+  list-style-type: none;
+}
+li a:hover {
   background-color: rgb(124, 168, 168);
   color: white;
 }
 .items-wrapper {
   display: flex;
-  width: 55%;
+  width: 65%;
   flex-direction: column;
 }
 .items-wrapper h3 {
@@ -83,6 +88,7 @@ li:hover {
   display: flex;
   align-items: center;
   border: 1px solid rgba(128, 128, 128, 0.301);
+  transition: all;
   /* justify-content: center; */
 }
 
@@ -130,6 +136,7 @@ li:hover {
 .cart:hover {
   color: solid rgb(42, 80, 80);
   font-weight: bold;
+  cursor: pointer;
 }
 /* .cart:hover .tooltip {
   display: block;
@@ -148,15 +155,19 @@ li:hover {
 }
 .desc span,
 .desc p {
-  opacity: 0.58;
+  opacity: 0.98;
+  color: gray;
   font-size: 0.8em;
-  margin-right: 7px;
+  margin-right: 9px;
 }
 .menu-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
+  top: 26vh;
+  width: 100%;
 }
 button {
   cursor: pointer;
@@ -172,12 +183,50 @@ button:hover {
   cursor: pointer;
   border-color: white;
 }
+.cart-notifs {
+  display: none;
+  position: fixed;
+  width: 272px;
+  height: 35px;
+  top: 4.4rem;
+  letter-spacing: 2px;
+  left: 50%;
+  margin-left: -137px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background-color: white;
+  padding: 0.1em;
+  color: green;
+}
+.cart-notifs:hover {
+  cursor: pointer;
+}
+.cart-list {
+  padding: 0.2em;
+  width: 30px;
+  height: 30px;
+  font-size: 1.4em;
+  background-color: rgb(42, 80, 80);
+  color: white;
+  position: fixed;
+  bottom: 2rem;
+  right: 10%;
+  z-index: 1000;
+}
+.cart-list:hover {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 750px) {
   .items-wrapper {
     min-width: 80%;
     letter-spacing: 0.94px;
   }
+  .menu-container {
+    top: 25vh;
+  }
+
   header {
     font-size: 0.8em;
     min-height: 20vh;
@@ -197,9 +246,9 @@ button:hover {
     padding: 7px;
     font: 1em sans-serif;
   }
-  li {
+  li a {
     font-size: 0.9em;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 10px;
     margin-right: 0.8em;
   }
   .first {
@@ -226,6 +275,10 @@ button:hover {
     flex-direction: row;
     padding: 15px 3px;
   }
+  .cart-notifs {
+    top: 4rem;
+    height: 30px;
+  }
   .items-wrapper h3 {
     background-color: rgb(42, 80, 80);
     margin: 40px 0px -30px 0px;
@@ -236,5 +289,12 @@ button:hover {
     color: white;
     box-shadow: 1px 1px 4px 2px rgb(252, 252, 252);
     justify-content: center;
+  }
+  .cart-list {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    margin-left: -15px;
+    z-index: 1000;
   }
 }

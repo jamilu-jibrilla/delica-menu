@@ -17,18 +17,22 @@
       </header>
       <nav class="menu-nav">
         <ul>
-          <li class="list-items first">Starters</li>
-          <li class="list-items">Soup</li>
-          <li class="list-items">Breakfast</li>
-          <li class="list-items">Lunch</li>
-          <li class="list-items">Dinner</li>
+          <li class="list-items first"><a href="#starter ">starter</a></li>
+          <li class="list-items"><a href="#soup"> soup </a></li>
+          <li class="list-items"><a href="#breakfast"> breakfast </a></li>
+          <li class="list-items"><a href="#lunch"> lunch </a></li>
+          <li class="list-items"><a href="#dinner"> dinner </a></li>
           <!-- <li class="list-items">Dessert</li> -->
         </ul>
       </nav>
       <div>
+        <div class="cart-list"><i class="fas fa-cart-plus"></i></div>
+        <div class="cart-notifs">
+          Added successfully! <i class="fas fa-check"></i>
+        </div>
         <div class="menu-container">
           <div class="items-wrapper">
-            <h3>Starters</h3>
+            <h3 id="starter">starters</h3>
             <div class="menu-item">
               <div class="one">
                 <div class="image">
@@ -41,9 +45,9 @@
                   <h4>scrambled eggs in puff pastry</h4>
                   <p>with wild mushroom and aparagus</p>
                   <div>
-                    <span>10 minutes</span>
-                    <span>240g</span>
-                    <span>1</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -71,9 +75,9 @@
                   <h4>scrambled eggs in puff pastry</h4>
                   <p>with wild mushroom and aparagus</p>
                   <div>
-                    <span>10 minutes</span>
-                    <span>240g</span>
-                    <span>1</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -89,7 +93,7 @@
           </div>
 
           <div class="items-wrapper">
-            <h3>Soup</h3>
+            <h3 id="soup">Soup</h3>
             <div class="menu-item">
               <div class="one">
                 <div class="image">
@@ -102,39 +106,9 @@
                   <h4>scrambled eggs in puff pastry</h4>
                   <p>with wild mushroom and aparagus</p>
                   <div>
-                    <span>10 minutes</span>
-                    <span>240g</span>
-                    <span>1</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="two">
-                <div class="cart">
-                  +
-                  <h5 class="tooltip">Add to cart</h5>
-                </div>
-                <div class="price">$100</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="items-wrapper">
-            <div class="menu-item">
-              <div class="one">
-                <div class="image">
-                  <img
-                    src="https://menulingua.s3.amazonaws.com/uploads/food/image/392049/menu_half-grilled-chicken.new_.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="desc">
-                  <h4>scrambled eggs in puff pastry</h4>
-                  <p>with wild mushroom and aparagus</p>
-                  <div>
-                    <span>10 minutes</span>
-                    <span>240g</span>
-                    <span>1</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -162,9 +136,9 @@
                   <h4>scrambled eggs in puff pastry</h4>
                   <p>with wild mushroom and aparagus</p>
                   <div>
-                    <span>10 minutes</span>
-                    <span>240g</span>
-                    <span>1</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -180,6 +154,36 @@
           </div>
 
           <div class="items-wrapper">
+            <div class="menu-item">
+              <div class="one">
+                <div class="image">
+                  <img
+                    src="https://menulingua.s3.amazonaws.com/uploads/food/image/392049/menu_half-grilled-chicken.new_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="desc">
+                  <h4>scrambled eggs in puff pastry</h4>
+                  <p>with wild mushroom and aparagus</p>
+                  <div>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="two">
+                <div class="cart">
+                  +
+                  <h5 class="tooltip">Add to cart</h5>
+                </div>
+                <div class="price">$100</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="breakfast" class="items-wrapper">
             <h3>Breakfast</h3>
             <div class="menu-item">
               <div class="one">
@@ -193,9 +197,9 @@
                   <h4>scrambled eggs in puff pastry</h4>
                   <p>with wild mushroom and aparagus</p>
                   <div>
-                    <span>10 minutes</span>
-                    <span>240g</span>
-                    <span>1</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -223,9 +227,9 @@
                   <h4>Sweet potato fries</h4>
                   <p>Crispy on the outside, soft and smooth to the bite</p>
                   <div>
-                    <span>15 minutes</span>
-                    <span>140g</span>
-                    <span>2</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -253,9 +257,9 @@
                   <h4>Sweet potato fries</h4>
                   <p>Crispy on the outside, soft and smooth to the bite</p>
                   <div>
-                    <span>15 minutes</span>
-                    <span>140g</span>
-                    <span>2</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -283,9 +287,9 @@
                   <h4>Sweet potato fries</h4>
                   <p>Crispy on the outside, soft and smooth to the bite</p>
                   <div>
-                    <span>15 minutes</span>
-                    <span>140g</span>
-                    <span>2</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -301,7 +305,7 @@
           </div>
 
           <div class="items-wrapper">
-            <h3>Lunch</h3>
+            <h3 id="lunch">Lunch</h3>
             <div class="menu-item">
               <div class="one">
                 <div class="image">
@@ -314,43 +318,13 @@
                   <h4>Sweet potato fries</h4>
                   <p>Crispy on the outside, soft and smooth to the bite</p>
                   <div>
-                    <span>15 minutes</span>
-                    <span>140g</span>
-                    <span>2</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
-
-              <div class="two">
-                <div class="cart">
-                  +
-                  <h5 class="tooltip">Add to cart</h5>
-                </div>
-                <div class="price">$100</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="items-wrapper">
-            <div class="menu-item">
-              <div class="one">
-                <div class="image">
-                  <img
-                    src="https://menulingua.s3.amazonaws.com/uploads/food/image/313972/fries-and-sauce-s.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="desc">
-                  <h4>Sweet potato fries</h4>
-                  <p>Crispy on the outside, soft and smooth to the bite</p>
-                  <div>
-                    <span>15 minutes</span>
-                    <span>140g</span>
-                    <span>2</span>
-                  </div>
-                </div>
-              </div>
-
+              ￼ Don't have a project set up? Get started her
               <div class="two">
                 <div class="cart">
                   +
@@ -374,9 +348,39 @@
                   <h4>Sweet potato fries</h4>
                   <p>Crispy on the outside, soft and smooth to the bite</p>
                   <div>
-                    <span>15 minutes</span>
-                    <span>140g</span>
-                    <span>2</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="two">
+                <div class="cart">
+                  +
+                  <h5 class="tooltip">Add to cart</h5>
+                </div>
+                <div class="price">$100</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-wrapper">
+            <div class="menu-item">
+              <div class="one">
+                <div class="image">
+                  <img
+                    src="https://menulingua.s3.amazonaws.com/uploads/food/image/313972/fries-and-sauce-s.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="desc">
+                  <h4>Sweet potato fries</h4>
+                  <p>Crispy on the outside, soft and smooth to the bite</p>
+                  <div>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -403,9 +407,9 @@
                   <h4>Sweet potato fries</h4>
                   <p>Crispy on the outside, soft and smooth to the bite</p>
                   <div>
-                    <span>15 minutes</span>
-                    <span>140g</span>
-                    <span>2</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -420,7 +424,7 @@
             </div>
           </div>
           <div class="items-wrapper">
-            <h3>Dinner</h3>
+            <h3 id="dinner">Dinner</h3>
             <div class="menu-item">
               <div class="one">
                 <div class="image">
@@ -433,9 +437,9 @@
                   <h4>Sweet potato fries</h4>
                   <p>Crispy on the outside, soft and smooth to the bite</p>
                   <div>
-                    <span>15 minutes</span>
-                    <span>140g</span>
-                    <span>2</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -462,9 +466,9 @@
                   <h4>Spicy Chicken Wings</h4>
                   <p>Six pieces, served with a side of honey mustard sauce</p>
                   <div>
-                    <span>10 minutes</span>
-                    <span>240g</span>
-                    <span>1</span>
+                    <span><i class="far fa-clock"></i> 10min</span>
+                    <span><i class="fas fa-weight"></i> 240g</span>
+                    <span><i class="fas fa-utensils"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -481,9 +485,10 @@
         </div>
       </div>
     </div>
-    <!-- <script
+    <script
       src="https://kit.fontawesome.com/a9d64d97b5.js"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
