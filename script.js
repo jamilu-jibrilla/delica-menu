@@ -10,7 +10,6 @@ let bb = document.querySelector(".cc");
 let cc = [];
 
 let i = 1;
-console.log(cc);
 addToCart.forEach((item) => {
   item.addEventListener(
     "click",
@@ -29,23 +28,18 @@ addToCart.forEach((item) => {
             .firstElementChild.firstElementChild.src,
         ],
       ];
-
-      console.log(
-        e.target.parentElement.parentElement.firstElementChild.lastElementChild
-          .firstElementChild.nextElementSibling.textContent
-      );
       cc.push(getData);
 
       item.innerHTML = `<i class="fas fa-check"></i>`;
       setTimeout(() => {
         notif.style.display = "flex";
+        cartIcon.style.display = "flex";
         cartNo.textContent = i;
         localStorage.setItem("getItem", JSON.stringify(cc));
         i++;
       }, 50);
       setTimeout(() => {
         notif.style.display = "none";
-        cartIcon.style.display = "flex";
       }, 1500);
     },
     { once: true }
@@ -57,6 +51,9 @@ cartIcon.addEventListener("click", function (e) {
   header.style.display = "none";
   body.style.backgroundColor = "rgb(244, 244, 244)";
   cartIcon.style.display = "none";
+  setTimeout(() => {
+    cartIcon.style.display = "none";
+  }, 1500);
   bb.style.backgroundColor = "rgb(244, 244, 244)";
   menuCont.style.display = "none";
   bb.innerHTML = "<h1>Your Order</h1>";
