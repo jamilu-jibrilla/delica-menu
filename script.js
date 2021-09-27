@@ -82,8 +82,10 @@ cartIcon.addEventListener("click", function (e) {
   document.querySelector(".orderbtn").addEventListener("click", function () {
     bb.style.display = "none";
     header.style.display = "flex";
+    document.querySelector("nav").style.display = "flex";
     cartIcon.style.display = "flex";
     menuCont.style.display = "flex";
+    // i = 0;
+    // cartNo.textContent = i;
   });
 });
-let allList = document.getElementsByTagName("a");
